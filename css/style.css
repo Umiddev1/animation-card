@@ -1,0 +1,91 @@
+*,*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    perspective: 1000px;
+    height: 100vh;
+    background-color: #D9D9D9;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.content {
+    width: 355px;
+    height: 505px;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+}
+.card {
+    width: 350px;
+    height: 500px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+}
+.content:hover .card {
+    transform: rotateX(-180deg);
+}
+.item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back-card {
+    transform: rotateX(-180deg);
+    background: linear-gradient(90deg, rgba(19, 19, 19, 0.788) 50%, rgba(0, 0, 0, 0.897) 50%);
+}
+.title {
+    font-size: 40px;
+    font-weight: 700px;
+    font-style: bold;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    margin-top: 180px;
+}
+.text {
+    font-size: 20px;
+    font-weight: 700px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.list-item {
+    margin-right: 8px;
+}
+.social-media {
+    width: 35px;
+    height: 35px;
+    transition: all 0.4s ease;
+}
+.social-media:hover {
+    border-radius: 20px;
+    background-color: tomato;
+}
+.fb {
+    width: 40px;
+    height: 40px;
+}
+.google {
+    width: 45px;
+    height: 45px;
+}
